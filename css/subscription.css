@@ -1,0 +1,41 @@
+.subscription-message {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscription-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.subscription-message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.subscription-message.sending {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+}
+
+.subscription-message.fade-out {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .subscription-message {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
